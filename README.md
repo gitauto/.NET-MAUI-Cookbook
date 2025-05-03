@@ -102,4 +102,4 @@ This book is primarily aimed at developers who are already familiar with the bas
 
 While a basic understanding of .NET MAUI and XAML is assumed, the recipes are presented in a simple, step-by-step format, making them easy to follow, even without prior experience. The only requirement is having your development environment set up, including Visual Studio or VS Code, .NET MAUI workloads, and an emulator or device for debugging.
 
-![Book Cover](/Images/Book%20Cover.png)
+![Book Cover](./Images/Book%20Cover.png)

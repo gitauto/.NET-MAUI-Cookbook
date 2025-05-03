@@ -11,4 +11,4 @@ This example is part of a recipe from the book published by [Packt](https://www.
 
 **Note:** This example may not include all the points mentioned above. For complete details, please refer to the corresponding recipe in the book.
 ## Output
-![Bindable layouts](/Images/BindableLayout.png)
+![Bindable layouts](../../Images/BindableLayout.png)
