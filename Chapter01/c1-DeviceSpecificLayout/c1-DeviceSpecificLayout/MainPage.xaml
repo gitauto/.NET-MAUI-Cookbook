@@ -5,10 +5,10 @@
              x:Class="c1_DeviceSpecificLayout.MainPage">
     
     <!--Step 1-->
-    <Grid>
+    <Grid
+        >
         <Grid.RowDefinitions>
-            <RowDefinition 
-              Height="{OnIdiom Desktop=200, Phone=*}"/>
+            <RowDefinition Height="{OnIdiom Desktop=200, Phone=*}"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Border BackgroundColor="Coral"/>
