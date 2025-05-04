@@ -1,11 +1,11 @@
-﻿namespace c1_HorizontalAndVerticalLayouts {
-    public partial class App : Application {
-        public App() {
-            InitializeComponent();
-        }
-        protected override Window CreateWindow(IActivationState? activationState)
-        {
-            return new Window(new AppShell());
-        }
+﻿namespace c1_HorizontalAndVerticalLayouts;
+
+public partial class App : Application
+{
+    public App()
+    {
+        InitializeComponent();
     }
+
+    protected override Window CreateWindow(IActivationState? activationState) => new(new AppShell());
 }

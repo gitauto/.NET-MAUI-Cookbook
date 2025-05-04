@@ -1,9 +1,9 @@
-﻿namespace c1_HorizontalAndVerticalLayouts {
-    public partial class MainPage : ContentPage {
+﻿namespace c1_HorizontalAndVerticalLayouts;
 
-        public MainPage() {
-            InitializeComponent();
-        }
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
     }
-
 }
