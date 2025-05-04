@@ -12,4 +12,4 @@ This example compliments a corresponding recipe from the book published by [Pack
 **Note:** This example may not include all the points mentioned above. For complete details, please refer to the corresponding recipe in the book.
 
 ## Output
-![Landscape layout customization](/Images/Landscape%20layout%20customization.png)
+![Landscape layout customization](../../Images/Landscape%20layout%20customization.png)
