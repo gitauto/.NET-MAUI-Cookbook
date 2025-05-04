@@ -1,7 +1,9 @@
-﻿namespace c1_GridLayouts {
-    public partial class AppShell : Shell {
-        public AppShell() {
-            InitializeComponent();
-        }
+﻿namespace c1_GridLayouts;
+
+public partial class AppShell : Shell
+{
+    public AppShell()
+    {
+        InitializeComponent();
     }
 }

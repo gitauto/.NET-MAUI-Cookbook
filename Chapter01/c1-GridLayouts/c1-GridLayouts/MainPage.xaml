@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="c1_GridLayouts.MainPage">
+    
     <!--Step 1-->
     <Grid RowDefinitions="40,80" 
         ColumnDefinitions="Auto, *">
@@ -31,4 +32,5 @@
             Grid.RowSpan="2" 
             Grid.Column="1" />
     </Grid>-->
+    
 </ContentPage>

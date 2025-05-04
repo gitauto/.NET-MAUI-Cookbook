@@ -10,4 +10,4 @@ This example compliments a corresponding recipe from the book published by [Pack
 * Common challenges you might face in real-world apps with fixed-size and Auto rows.
 
 ## Output
-![Grid layouts](/Images/Grid%20multiple%20row%20alignment%20and%20row%20spanning.png)
+![Grid layouts](../../Images/Grid%20multiple%20row%20alignment%20and%20row%20spanning.png)
