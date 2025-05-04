@@ -1,10 +1,11 @@
-﻿namespace c1_DeviceSpecificLayout; 
-public partial class App : Application {
-    public App() {
+﻿namespace c1_DeviceSpecificLayout;
+
+public partial class App : Application
+{
+    public App()
+    {
         InitializeComponent();
     }
-    protected override Window CreateWindow(IActivationState? activationState)
-    {
-        return new Window(new AppShell());
-    }
+
+    protected override Window CreateWindow(IActivationState? activationState) => new(new AppShell());
 }

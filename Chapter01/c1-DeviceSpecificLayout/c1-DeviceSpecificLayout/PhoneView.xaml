@@ -4,8 +4,7 @@
              x:Class="c1_DeviceSpecificLayout.PhoneView">
     
     <Border BackgroundColor="Coral">
-        <Label Text="Phone View" 
-               VerticalOptions="Center" 
-               HorizontalOptions="Center"/>
+        <Label Text="Phone View" VerticalOptions="Center" HorizontalOptions="Center"/>
     </Border>
+    
 </ContentView>
