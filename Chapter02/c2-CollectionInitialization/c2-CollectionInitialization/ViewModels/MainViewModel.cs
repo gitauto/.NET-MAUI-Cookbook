@@ -16,11 +16,11 @@ public partial class MainViewModel : ObservableObject
     public partial bool IsInitialized { get; set; }
 
     [RelayCommand(CanExecute = nameof(CanInitialize))]
-    async Task InitializeAsync()
+    private async Task InitializeAsync()
     {
         Customers = [.. await DummyService.GetCustomersAsync()];
         IsInitialized = true;
     }
 
-    bool CanInitialize() => !IsInitialized;
+    private bool CanInitialize() => !IsInitialized;
 }
