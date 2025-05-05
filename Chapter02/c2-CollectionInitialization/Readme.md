@@ -11,9 +11,12 @@ This example compliments a corresponding recipe from the book published by [Pack
 
 **Note:** This example may not include all the points mentioned above. For complete details, please refer to the corresponding recipe in the book.
 
-**Note1:** In order to be complianto with AOT on Windows, we need to add <LangVersion>preview</LangVersion> on the project file and for the for 
-[ObservableProperty] we need to set the private field as "public partial" (instead of "private") and transform it in a property, adding "{ get; set; }".
-The first letter of the (ex) field name, must be set a capital letter.
+**Note 1:** In order to be compliant with AOT for Windows, we need to add the following in the project file: 
+
+`<LangVersion>preview</LangVersion>`
+
+The private field with the attribute `[ObservableProperty]` must be set as "public partial" (instead of "private") and transformed into a property, adding "{ get; set; }". 
+Also the first letter of the (ex) field name, must be set to capital letter.
 
     [ObservableProperty]
     public partial ObservableCollection<Customer>? Customers { get; set; }
