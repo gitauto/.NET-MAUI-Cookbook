@@ -15,7 +15,7 @@
         <toolkit:EventToCommandBehavior EventName="Loaded" Command="{Binding InitializeCommand}" BindingContext="{Binding Source={x:Reference page}, Path=BindingContext}"/>
     </ContentPage.Behaviors>
     
-    <Grid>
+    <Grid Margin="10,10,10,10">
         <CollectionView ItemsSource="{Binding Customers}">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="{x:Type viewModel:Customer}">

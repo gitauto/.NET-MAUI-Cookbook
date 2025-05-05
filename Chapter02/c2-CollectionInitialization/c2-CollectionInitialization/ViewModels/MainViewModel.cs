@@ -7,11 +7,11 @@ namespace c2_DecoupleViewAndViewModel.ViewModels;
 public partial class MainViewModel : ObservableObject
 {
     [ObservableProperty]
-    ObservableCollection<Customer>? customers;
+    public partial ObservableCollection<Customer>? Customers { get; set; }
 
     [ObservableProperty]
     [NotifyCanExecuteChangedFor(nameof(InitializeCommand))]
-    bool isInitialized;
+    public partial bool IsInitialized { get; set; }
 
     [RelayCommand(CanExecute = nameof(CanInitialize))]
     async Task InitializeAsync()
@@ -40,7 +40,7 @@ public static class DummyService
 {
     public static async Task<IEnumerable<Customer>> GetCustomersAsync()
     {
-        await Task.Delay(5000);
+        await Task.Delay(3000);
         return [new Customer(){ ID = 1, Name = "Jim" }, new Customer(){ ID = 2, Name = "Bob" }];
     }
 }

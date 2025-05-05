@@ -20,6 +20,8 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
+		<LangVersion>preview</LangVersion>
+
 		<!-- Display name -->
 		<ApplicationTitle>c2-DecoupleViewAndViewModel</ApplicationTitle>
 
