@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using c2_DecoupleViewAndViewModel.Models;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
 
@@ -21,19 +22,6 @@ public partial class MainViewModel : ObservableObject
     }
     bool CanInitialize() => !IsInitialized;
 
-}
-public class Customer
-{
-    public int ID
-    {
-        get;
-        set;
-    }
-    public string? Name
-    {
-        get;
-        set;
-    }
 }
 
 public static class DummyService
