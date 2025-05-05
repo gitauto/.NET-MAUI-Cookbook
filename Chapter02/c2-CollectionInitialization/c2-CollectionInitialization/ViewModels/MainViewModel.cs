@@ -6,21 +6,33 @@ namespace c2_DecoupleViewAndViewModel.ViewModels;
 
 public partial class MainViewModel : ObservableObject
 {
-    [ObservableProperty]
-    ObservableCollection<Customer>? customers;
+    private ObservableCollection<Customer>? _customers;
+    public ObservableCollection<Customer>? Customers
+    {
+        get => _customers;
+        set => SetProperty(ref _customers, value);
+    }
 
-    [ObservableProperty]
-    [NotifyCanExecuteChangedFor(nameof(InitializeCommand))]
-    bool isInitialized;
+    private bool _isInitialized;
+    public bool IsInitialized
+    {
+        get => _isInitialized;
+        set
+        {
+            if (SetProperty(ref _isInitialized, value))
+            {
+                InitializeCommand.NotifyCanExecuteChanged();
+            }
+        }
+    }
 
     [RelayCommand(CanExecute = nameof(CanInitialize))]
     async Task InitializeAsync()
     {
-        Customers = [.. await DummyService.GetCustomersAsync()];
-        IsInitialized = true;
+        _customers = [.. await DummyService.GetCustomersAsync()];
+        _isInitialized = true;
     }
-    bool CanInitialize() => !IsInitialized;
-
+    bool CanInitialize() => !_isInitialized;
 }
 public class Customer
 {
