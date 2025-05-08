@@ -9,6 +9,8 @@ public partial class MainViewModel : INotifyPropertyChanged
     private int _count = 0;
     private string _textValue = "Click Me!";
 
+    public ICommand UpdateTextCommand { get; set; }
+
     public MainViewModel()
     {
         UpdateTextCommand = new Command(UpdateText);
@@ -23,8 +25,6 @@ public partial class MainViewModel : INotifyPropertyChanged
             OnPropertyChanged();
         }
     }
-
-    public ICommand UpdateTextCommand { get; set; }
     
     public void UpdateText()
     {
