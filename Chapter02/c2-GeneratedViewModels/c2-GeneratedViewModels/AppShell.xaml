@@ -3,7 +3,7 @@
     x:Class="c2_DecoupleViewAndViewModel.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:c2_DecoupleViewAndViewModel"
+    xmlns:local="clr-namespace:c2_DecoupleViewAndViewModel.Views"
     Shell.FlyoutBehavior="Disabled"
     Title="c2_DecoupleViewAndViewModel">
 
